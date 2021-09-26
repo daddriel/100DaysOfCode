@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+:root {
+    --color-primary-sumay: #00d066;
+    --color-secondary-sumay: #6039AE;
+    --color-danger-sumay: #FF513E;
+    --color-aux-sumay: #C3D801;
+    --color-white-sumay: #FFF;
+    --color-gray-sumay: #111111;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 16px;
+    
+}
+body {
+    margin: 0;
+    padding:0;
+}
+header {
+    width: 100vw;
+    background-color: var(--color-white-sumay);
+}
+header div {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: auto;
+
+}
+
+#header {
+    z-index:10;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header-img {
+    width: 7rem;
+    height: auto;
+}
+.nav-link {
+    padding: 0 0 0 50px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-secondary-sumay);
+}
+main{
+    max-width: 800px;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+
+h2{ 
+    display: block;
+    font-size: 1.7rem;
+    color: var(--color-primary-sumay); 
+    text-align: center;  
+}
+
+/*HOME*/
+#home {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#form{
+    text-align: center;
+    margin: 0 auto;
+}
+form input{
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+}
+form label{
+    color: var(--color-gray-sumay);
+}
+#submit {
+    background-color: var(--color-primary-sumay);
+    color: var(--color-white-sumay);
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    padding: 10px;
+    border-style: none;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: var(--color-secondary-sumay);
+    padding: 10px;
+}
+#email {
+    border: none;
+    border-bottom: solid 2px var(--color-secondary-sumay);
+    -webkit-transition: 0.5s;
+}
+#email:focus {
+    outline: none;
+    border: none;
+    border-bottom: solid 2px var(--color-primary-sumay);
+}
+#home-product {
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 5px;
+    display: block;
+}
+#img-product{
+    max-width: 400px;
+    height: auto;
+}
+/*WORK*/
+#work {
+    display: flex;
+    justify-content: center;
+}
+video{
+    display: block;
+    margin: 50px auto;
+    width: 800px;
+}
+/*PRODUCT*/
+.color-b-primary {
+    background-color: var(--color-primary-sumay);
+}
+.color-b-secondary {
+    background-color: var(--color-secondary-sumay);
+}
+.color-b-danger {
+    background-color: var(--color-danger-sumay);
+}
+.color-b-aux {
+    background-color: var(--color-aux-sumay);
+}
+#content-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    text-align: center;
+    width: 260px;
+    color: var(--color-white-sumay);
+    border-radius: 50% 50% 44% 56% / 84% 81% 19% 16%  ;
+    box-shadow: 4px 4px 7px -6px var(--color-gray-sumay);
+}
+.card-img{
+    display: block;
+    margin: 20px auto;
+    width: auto;
+    height: 200px;
+    -webkit-filter: drop-shadow(5px 5px 5px #000 );
+    filter: drop-shadow(5px 5px 5px #000);
+    
+}
+h4 {
+    color: var(--color-white-sumay);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+.pricing_product {
+    font-size: 2rem;
+    color: var(--color-aux-sumay);
+    font-weight: 900;
+    margin: 5px;
+}
+/*MEDIA*/
+@media (max-width: 700px) {
+    main{
+        width: 90%;
+    }
+    header div {
+        justify-content: center;
+    }
+    
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+    #nav-bar {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-link {
+        padding: 0;
+        width: 100%;
+        
+    }
+    #header-img {
+        margin: 0 calc((100vw - 7rem) / 2);
+        width: 7rem;
+    }
+    #form {
+        width: 100%;
+    }
+    #img-product {
+        width: 100%;
+    }
+    #video {
+        width: 100%;
+    }
+    #content-card {
+        justify-content: center;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+}
